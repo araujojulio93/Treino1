@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+  --primary-color: #9747EF;
+  --secondary-color: #8233E8;
+  
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #232323;
+
+  --primary-background-color: #0E1014;
+  --secondary-background-color: #0E1014;
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Unbounded", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--primary-background-color);
+}
+
+.header__principal {
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 360px;
+}
+
+
+section {
+  width: 792px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-text-color);
+
+}
+
+span {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  margin: 24px auto;
+  font-weight: 100;
+}
+
+.button {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 40px auto;
+  padding: 12px 48px;
+  border-radius: 36px;
+  font-weight: 600;
+  font-size: normal;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  main {
+    width: 100%;
+  }
+  
+  section {
+    width: auto;
+    margin: 17px;
+  }
+  
+  .header__principal {
+    justify-content: space-between;
+    margin: 32px 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .button {
+    padding: 24px;
+    font-size: 1.25rem;
+    line-height: 18px;
+    font-weight: 600;
+    font-style: normal;
+  }
+}

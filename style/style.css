@@ -79,12 +79,18 @@ p {
   background-color: var(--primary-color);
   text-align: center;
   margin: 40px auto;
-  padding: 12px 48px;
+  padding: 24px 48px;
   border-radius: 36px;
   font-weight: 600;
   font-size: normal;
   text-decoration: none;
+  line-height: 18px;
 }
+
+.button:hover {
+  background-color: #8232E8;
+}
+
 
 @media (max-width: 1200px) {
   main {
@@ -115,5 +121,9 @@ p {
     line-height: 18px;
     font-weight: 600;
     font-style: normal;
+  }
+
+  .image {
+    background-image: url(/Curso2/img/celulares-sobrepostos-mobile.png);
   }
 }
